@@ -1,3 +1,5 @@
+import { defineWidgetConfig } from "@medusajs/admin-sdk";
+
 // 간단한 테스트 위젯 (의존성 없음)
 const SimpleWidget = () => {
   return (
@@ -45,8 +47,8 @@ const SimpleWidget = () => {
 };
 
 // 위젯 설정
-export const config = {
+export const config = defineWidgetConfig({
   zone: "product.details.after",
-};
+});
 
 export default SimpleWidget;
