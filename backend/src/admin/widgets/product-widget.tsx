@@ -1,4 +1,4 @@
-import { defineWidgetConfig } from "@medusajs/admin-shared";
+import type { WidgetConfig } from "@medusajs/admin-sdk";
 
 // 위젯
 const ProductWidget = () => {
@@ -10,8 +10,8 @@ const ProductWidget = () => {
 };
 
 // 위젯 설정
-export const config = defineWidgetConfig({
+export const config: WidgetConfig = {
   zone: "product.details.after",
-});
+};
 
 export default ProductWidget;
